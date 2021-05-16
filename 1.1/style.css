@@ -1,0 +1,9 @@
+body{
+    display:flex;
+}
+.box{
+    background : peru;
+    width : 100px;
+    height : 100px;
+    color:white;
+}
