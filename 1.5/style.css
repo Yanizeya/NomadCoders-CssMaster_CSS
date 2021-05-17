@@ -1,0 +1,22 @@
+.father{
+    display:flex;
+    justify-content: space-around;
+
+    height : 100vh;
+    /* align-content: center; */
+}
+.child{
+    width : 200px;
+    height : 200px;
+    color:white;
+    background : peru;
+    font-size : 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child:nth-child(2){
+  background : black;
+  flex-grow : 1;
+}
