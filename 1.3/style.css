@@ -1,0 +1,12 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    height : 100vh;
+}
+.box{
+    background : peru;
+    height : 100px;
+    color:white;
+}

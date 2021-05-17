@@ -1,0 +1,17 @@
+.father{
+    display:flex;
+    justify-content: space-around;
+    
+    height : 100vh;
+}
+.child{
+    width : 100px;
+    height : 100px;
+    color:white;
+    background : peru;
+    font-size : 20px;
+}
+.child:nth-child(2){
+    align-self : center;
+   order: 1;
+}
