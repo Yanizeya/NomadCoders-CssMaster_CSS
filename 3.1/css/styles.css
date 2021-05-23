@@ -1,0 +1,20 @@
+h2 {
+  color: red;
+  font-size: 32px;
+}
+
+.box {
+  margin-top: 20px;
+}
+
+.box h2 {
+  color: blue;
+}
+
+.box button {
+  color: red;
+}
+
+.box button:hover {
+  background-color: green;
+}
