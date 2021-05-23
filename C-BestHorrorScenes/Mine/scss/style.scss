@@ -1,0 +1,18 @@
+body{
+  height : 100vh; //사이즈 초기설정 어떻게?
+  background-color: green;
+  .mainGrid{
+    height : 100vh;
+    .sidePage{
+      width : 33%;
+      height : 100%;
+      position : fixed;
+      background-color: red;
+    }
+    .mainPage{
+      margin-left : 33%;
+      height : 200%;
+      background-color: blue;
+    }
+  }
+}

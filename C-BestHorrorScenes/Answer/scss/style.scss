@@ -1,0 +1,24 @@
+@import "_variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white;
+}
+header {
+  position: fixed;
+  width: 33%;
+  color: $red;
+}
+
+main {
+  margin-left: 33%;
+  .movie {
+    background: $red;
+    height: 100vh;
+    color: white;
+    
+  }
+}
