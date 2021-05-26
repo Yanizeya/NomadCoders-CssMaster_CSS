@@ -1,0 +1,24 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f0eff0;
+}
+
+header {
+  position: fixed;
+  width: 33%;
+  color: #e7473c;
+}
+
+main {
+  margin-left: 33%;
+}
+
+main .movie {
+  background: #e7473c;
+  height: 100vh;
+  color: white;
+}
