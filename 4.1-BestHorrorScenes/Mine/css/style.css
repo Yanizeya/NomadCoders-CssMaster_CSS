@@ -1,20 +1,26 @@
 body{
   height: 100vh;
-  background-color: green;
+  background-color: black;
 }
 
-.grid {
-  height: 100vh;
-}
 
 .sideBar{
-  display : flex;
-  flex-direction: column;
-  align-items: center;
-  width: 45%;
+  width: 35%;
   height: 100%;
   position: fixed;
-  background-color: red;
+  background-color: white;
+  box-sizing: border-box;
+  color : tomato;
+}
+
+.sideBar--title{
+  padding-top : 30px;
+  font-size : 80px;
+  text-transform: uppercase;
+}
+
+.sideBar--content{
+
 }
 
 .sideBar  h1, .sideBar  h2, .sideBar div{
@@ -24,7 +30,7 @@ body{
 
 
 .mainPage {
-  margin-left: 45%;
+  margin-left: 35%;
   height: 200%;
-  background-color: blue;
+  background-color: tomato;
 }
