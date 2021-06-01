@@ -1,0 +1,21 @@
+body {
+  height: 100vh;
+  background-color: green;
+}
+
+body .mainGrid {
+  height: 100vh;
+}
+
+body .mainGrid .sidePage {
+  width: 33%;
+  height: 100%;
+  position: fixed;
+  background-color: red;
+}
+
+body .mainGrid .mainPage {
+  margin-left: 33%;
+  height: 200%;
+  background-color: blue;
+}
