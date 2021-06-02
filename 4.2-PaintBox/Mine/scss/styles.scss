@@ -1,0 +1,61 @@
+body{
+    position : relative;
+    width : 100%;
+    height : 100vh;
+    //widht와 height를 꼭 지정해줘야 하는가? , 수치는 이런 식으로 하면 되나?
+}
+header{
+    position : fixed;
+    top : 0;
+    left : 0;
+    height : 100px;
+    width : 100%;
+    // width를 꼭 지정해줘야 하는가?
+    background-color: white;;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        padding : 0px 10%;
+        li{
+            margin-right: 40px;
+        }
+        li:nth-child(2){
+            flex-grow : 1;
+            // 다른 방법은 없는가?
+        }
+        // padding을 픽셀로 지정하는가 비율로 지정하는가
+        // 꼭 패딩을 지정해야 하나?, ul에 패딩을 지정하는게 맞는가?
+    }
+}
+
+main{
+    margin-top : 100px;
+    padding : 0px 10%;
+    .title{
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height : 40%;
+        background : blue;
+        h1{
+            width : 40%;
+            display : flex;
+            justify-content: center;
+            ul{
+                list-style : none;
+                li{
+                    display : flex;
+                    justify-content: center;
+                }
+            }
+            // width의 존재로 인해(혹은 불필요한 ul의 생성으로 인해) flex를 두번 쓰게 되었다. title에 한번, h1에 한번, li에 한번. 이게 비효율적이지 않은가?
+        }
+        button{
+            width : 150px;
+            height : 50px;
+            background-color: white;
+            // border : none;  
+        }
+    }
+}

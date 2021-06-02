@@ -1,0 +1,58 @@
+body{
+  height: 100vh;
+  background-color: black;
+}
+
+
+.sideBar{
+  width: 35%;
+  height: 100%;
+  position: fixed;
+  background-color: white;
+  box-sizing: border-box;
+  color : tomato;
+  padding : 0px 80px;
+}
+
+.sideBar--title{
+  padding : 80px 0px;
+  font-size : 80px;
+  text-transform: uppercase;
+}
+
+.sideBar--content{
+  padding : 20px 0px;
+}
+.sideBar--content h2{
+font-size : 30px;
+}
+.sideBar--content p{
+  margin-top : 50px;
+  font-size : 16px;
+}
+.sideBar--nav{
+  width : 60%;
+}
+.mainPage {
+  margin-left: 35%;
+  background-color: tomato;
+}
+
+.mainPage--box{
+  padding : 150px;
+}
+
+.mainPage--box__row1{
+  display : flex;
+  justify-content: space-between;
+}
+.mainPage--box__row2{
+  display : flex;
+  justify-content: flex-end;
+}
+.mainPage--box iframe{
+  margin : 30px 0px;
+}
+.mainPage--box h1{
+  font-size : 30px;
+}
