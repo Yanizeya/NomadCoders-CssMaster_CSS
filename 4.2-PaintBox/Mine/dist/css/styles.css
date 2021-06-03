@@ -1,7 +1,7 @@
 body {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 200vh;
 }
 
 header {
@@ -60,18 +60,30 @@ main .title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80%;
-  background: blue;
+  height: 1000px;
   color: white;
+  padding: 15% 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+main .title > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }
 
 main .title h4 {
   font-size: 0.8em;
-  margin-top: 10%;
 }
 
 main .title h1 {
-  font-size: 2em;
+  font-size: 3em;
+  font-weight: 500;
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,6 +98,7 @@ main .title h1 ul {
 }
 
 main .title h1 ul li {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,4 +111,86 @@ main .title button {
   width: 150px;
   height: 50px;
   background-color: white;
+}
+
+main .content .top {
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+
+main .content .middle {
+  margin-bottom: 70px;
+}
+
+main .content .bottom {
+  margin-bottom: 70px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+main .content .bottom img {
+  width: 100%;
+}
+
+main .content .content__post {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main .content .content__post img {
+  width: 100%;
+}
+
+main .content .content__post div {
+  background-color: antiquewhite;
+}
+
+footer {
+  height: 350px;
+  background-color: antiquewhite;
+  padding: 70px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div h5 {
+  font-size: 0.6em;
+  padding-bottom: 50px;
+}
+
+footer div ul {
+  list-style: circle;
+  text-align: center;
+}
+
+footer div ul li {
+  padding: 5px;
+}
+
+footer div:nth-child(2) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }

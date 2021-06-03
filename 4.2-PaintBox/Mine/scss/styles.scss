@@ -1,7 +1,7 @@
 body{
     position : relative;
     width : 100%;
-    height : 100vh;
+    height : 200vh;
     //widht와 height를 꼭 지정해줘야 하는가? , 수치는 이런 식으로 하면 되나?
 }
 header{
@@ -37,27 +37,39 @@ header{
 main{
     margin-top : 80px;
     padding : 0px 10%;
+    
+    
     .title{
         display : flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height : 80%;
-        background : blue;
+        height : 1000px;
         color : white;
-        
+        padding : 15% 0px;
+        box-sizing: border-box;
+        position : relative;
+        >img{
+            position : absolute;
+            top:0;
+            left:0;
+            object-fit:cover;
+            z-index: -1;
+            //img 사이즈를 어떻게 지정하는지
+        }
         h4{
             font-size: 0.8em;
-            margin-top : 10%;
         }
         h1{
-            font-size : 2em;
+            font-size : 3em;
+            font-weight: 500;
             width : 40%;
             display : flex;
             justify-content: center;
             ul{
                 list-style : none;
                 li{
+                    margin-top : 10px;
                     display : flex;
                     justify-content: center;
                 }
@@ -69,6 +81,65 @@ main{
             height : 50px;
             background-color: white;
             // border : none;  
+        }
+    }
+    .content{
+       .top{
+           margin-bottom : 70px;
+           margin-top : 70px;
+        }
+        .middle{
+            margin-bottom : 70px;
+            // 이미지의 크기를 조절하고 싶은데 방법을 모르겠음
+            // 어쩌면 이중그리드라 안되는 거일 수도 있음 (middle 안에 content그리드)
+        }
+        .bottom{
+            margin-bottom : 70px;
+            display : grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            img{
+                width : 100%;
+            }
+        }
+        .content__post{
+            display : grid;
+            grid-template-columns: 1fr 1fr;
+            img{
+                width : 100%;
+            }
+            div{
+                background-color: antiquewhite;
+            }
+        }
+    }
+}
+
+footer{
+    height : 350px;
+    background-color : antiquewhite;
+    padding : 70px 0px;
+    box-sizing: border-box;
+    display : grid;
+    grid-template-columns: repeat(3, 1fr);
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h5{
+            font-size : 0.6em;
+            padding-bottom: 50px;
+        }
+        ul{
+            list-style: circle;
+            text-align: center;
+            li{
+                padding : 5px;
+            }
+        }
+        &:nth-child(2){
+            border-left : 1px solid black;
+            border-right: 1px solid black;
         }
     }
 }
