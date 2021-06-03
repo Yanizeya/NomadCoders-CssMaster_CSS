@@ -8,14 +8,20 @@ header{
     position : fixed;
     top : 0;
     left : 0;
-    height : 100px;
+    height : 80px;
     width : 100%;
     // width를 꼭 지정해줘야 하는가?
-    background-color: white;;
+    background-color: white;
+    font-size : 0.8em;
+    font-weight :400;
+    // 폰트 사이즈는 가장 상위 엘리먼트에 하면 되나?
     ul{
+        box-sizing : border-box;
+        height : 100%;
+        padding : 0px 10%;
         display: flex;
         justify-content: space-between;
-        padding : 0px 10%;
+        align-items: center;
         li{
             margin-right: 40px;
         }
@@ -23,22 +29,29 @@ header{
             flex-grow : 1;
             // 다른 방법은 없는가?
         }
-        // padding을 픽셀로 지정하는가 비율로 지정하는가
+        // padding을 픽셀로 지정하는가 비율로 지정하는가    
         // 꼭 패딩을 지정해야 하나?, ul에 패딩을 지정하는게 맞는가?
     }
 }
 
 main{
-    margin-top : 100px;
+    margin-top : 80px;
     padding : 0px 10%;
     .title{
         display : flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        height : 40%;
+        height : 80%;
         background : blue;
+        color : white;
+        
+        h4{
+            font-size: 0.8em;
+            margin-top : 10%;
+        }
         h1{
+            font-size : 2em;
             width : 40%;
             display : flex;
             justify-content: center;
