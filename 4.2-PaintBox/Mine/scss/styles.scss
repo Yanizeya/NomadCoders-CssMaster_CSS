@@ -38,8 +38,10 @@ main{
     margin-top : 80px;
     padding : 0px 10%;
     
-    
     .title{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("https://images.unsplash.com/photo-1583248369069-9d91f1640fe6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
+        background-size: cover;
         display : flex;
         flex-direction: column;
         justify-content: space-between;
@@ -48,15 +50,6 @@ main{
         color : white;
         padding : 15% 0px;
         box-sizing: border-box;
-        position : relative;
-        >img{
-            position : absolute;
-            top:0;
-            left:0;
-            object-fit:cover;
-            z-index: -1;
-            //img 사이즈를 어떻게 지정하는지
-        }
         h4{
             font-size: 0.8em;
         }
