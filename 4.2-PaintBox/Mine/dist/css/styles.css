@@ -19,11 +19,11 @@ header {
   background-color: white;
   font-size: 0.8em;
   font-weight: 400;
+  padding: 0px 10%;
 }
 
 header ul {
   height: 100%;
-  padding: 0px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,15 +106,29 @@ main .title button {
   width: 150px;
   height: 50px;
   background-color: white;
+  -webkit-transition: color,background 0.5s ease 0s;
+  transition: color,background 0.5s ease 0s;
+  border: none;
+  border-radius: 10px;
+}
+
+main .title button:hover {
+  color: white;
+  background-color: black;
 }
 
 main .content .top {
   margin-bottom: 70px;
   margin-top: 70px;
+  height: 70vh;
 }
 
 main .content .middle {
   margin-bottom: 70px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50vh 50vh 50vh;
+      grid-template-rows: 50vh 50vh 50vh;
 }
 
 main .content .bottom {
@@ -134,12 +148,15 @@ main .content .bottom img {
 main .content .content__post {
   display: -ms-grid;
   display: grid;
+  width: 100%;
+  height: 100%;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
 
 main .content .content__post img {
   width: 100%;
+  height: 100%;
 }
 
 main .content .content__post div {

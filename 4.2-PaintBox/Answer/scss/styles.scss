@@ -82,7 +82,7 @@ header {
     text-align: center;
     text-decoration: none;
     color: black;
-    @extend %miniTitle;
+    
     font-size: 10px;
     transition: color 0.3s linear, background 0.3s linear;
     &:hover {
@@ -171,7 +171,6 @@ header {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 410px);
   .gallery__poster {
-    height: 100%;
     cursor: pointer;
     img {
       max-width: 100%;

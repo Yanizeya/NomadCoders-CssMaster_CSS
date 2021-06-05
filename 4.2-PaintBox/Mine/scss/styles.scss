@@ -21,9 +21,10 @@ header{
     font-size : 0.8em;
     font-weight :400;
     // 폰트 사이즈는 가장 상위 엘리먼트에 하면 되나? .더 상위에(아예 a태그 라던가) 해도 된다
+    padding : 0px 10%;
     ul{
         height : 100%;
-        padding : 0px 10%;
+        
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -34,8 +35,8 @@ header{
             flex-grow : 1;
             // 다른 방법은 없는가? .nomad는 ul을 두개를 만들어 여기에 flex를 지정했다, 내 방법도 상관 없을 듯 하다
         }
-        // padding을 픽셀로 지정하는가 비율로 지정하는가    
-        // 꼭 패딩을 지정해야 하나?, ul에 패딩을 지정하는게 맞는가?
+        // padding을 픽셀로 지정하는가 비율로 지정하는가 . 모두 픽셀이다
+        // 꼭 패딩을 지정해야 하나?, ul에 패딩을 지정하는게 맞는가? .더 상위의 element에 패딩을 지정
     }
 }
 
@@ -77,6 +78,13 @@ main{
             width : 150px;
             height : 50px;
             background-color: white;
+            transition : color,background 0.5s ease 0s;
+            border : none;
+            border-radius: 10px;
+            &:hover{
+                color : white;
+                background-color: black;
+            }
             // border : none;  
         }
     }
@@ -84,11 +92,14 @@ main{
        .top{
            margin-bottom : 70px;
            margin-top : 70px;
+           height : 70vh;
         }
         .middle{
             margin-bottom : 70px;
-            // 이미지의 크기를 조절하고 싶은데 방법을 모르겠음
-            // 어쩌면 이중그리드라 안되는 거일 수도 있음 (middle 안에 content그리드)
+            display : grid;
+            grid-template-rows : 50vh 50vh 50vh;
+            // 이미지의 크기를 조절하고 싶은데 방법을 모르겠음 .해결
+            // 어쩌면 이중그리드라 안되는 거일 수도 있음 (middle 안에 content그리드) .부분적으론 그렇다, 상위의 element에 높이 지정을 한 것이 문제였음
         }
         .bottom{
             margin-bottom : 70px;
@@ -101,9 +112,12 @@ main{
         }
         .content__post{
             display : grid;
+            width : 100%;
+            height : 100%;
             grid-template-columns: 1fr 1fr;
             img{
                 width : 100%;
+                height : 100%;
             }
             div{
                 background-color: antiquewhite;
