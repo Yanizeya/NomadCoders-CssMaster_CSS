@@ -1,0 +1,33 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: cadetblue;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  background: burlywood;
+}
+
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

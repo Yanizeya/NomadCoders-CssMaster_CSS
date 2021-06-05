@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: cadetblue;
+    position : relative;
+}
+
+header{
+    width : 100%;
+    position : fixed;
+    top : 0px;
+    left : 0px;
+    display : grid;
+    grid-template-columns: 2fr 1fr;
+    background :burlywood;
+    div{
+        display : flex;
+        ul{
+            display: flex;
+        }
+    }
+}
