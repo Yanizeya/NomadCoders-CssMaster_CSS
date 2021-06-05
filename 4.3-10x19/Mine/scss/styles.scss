@@ -1,0 +1,61 @@
+@import "_variables.scss";
+
+*{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0px;
+}
+
+body{
+    width : 100%;
+    height: 100vh;
+    display : grid;
+    padding : 8px;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: repeat(7, 1fr);
+    gap : 1px;
+    background-color: $bg;
+    color : $text;
+    font-size : 20px;
+    > *{
+        background-color: $box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+}   
+
+
+nav{
+    transition: color, background 0.5s ease 0s;
+    &:hover{
+        color : white;
+        background: $text;
+    }
+}
+
+
+
+img{
+    grid-row : 2/ -2;
+    grid-column: 2/span 1;
+    width : 100%;
+    height : 100%;
+}
+
+
+.scrollText{
+    white-space: nowrap;
+    overflow: hidden;
+    span{
+        animation : scrollText 5s linear 0s infinite none;
+    }
+}
+@keyframes scrollText{
+    from{
+        transform :  translateX(-700px);
+    }
+    to{
+        transform :  translateX(+700px);
+    }
+}

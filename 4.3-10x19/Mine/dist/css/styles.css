@@ -1,0 +1,86 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  padding: 8px;
+  -ms-grid-columns: 2fr 3fr 2fr;
+      grid-template-columns: 2fr 3fr 2fr;
+  -ms-grid-rows: (1fr)[7];
+      grid-template-rows: repeat(7, 1fr);
+  gap: 1px;
+  background-color: #af7832;
+  color: #af7832;
+  font-size: 20px;
+}
+
+body > * {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  -webkit-transition: color, background 0.5s ease 0s;
+  transition: color, background 0.5s ease 0s;
+}
+
+nav:hover {
+  color: white;
+  background: #af7832;
+}
+
+img {
+  grid-row: 2/ -2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/span 1;
+  width: 100%;
+  height: 100%;
+}
+
+.scrollText {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.scrollText span {
+  -webkit-animation: scrollText 5s linear 0s infinite none;
+          animation: scrollText 5s linear 0s infinite none;
+}
+
+@-webkit-keyframes scrollText {
+  from {
+    -webkit-transform: translateX(-700px);
+            transform: translateX(-700px);
+  }
+  to {
+    -webkit-transform: translateX(700px);
+            transform: translateX(700px);
+  }
+}
+
+@keyframes scrollText {
+  from {
+    -webkit-transform: translateX(-700px);
+            transform: translateX(-700px);
+  }
+  to {
+    -webkit-transform: translateX(700px);
+            transform: translateX(700px);
+  }
+}
