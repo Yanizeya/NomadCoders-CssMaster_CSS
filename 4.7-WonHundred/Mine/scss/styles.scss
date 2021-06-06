@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono&family=DM+Serif+Display:ital@0;1&display=swap");
+
+*{
+box-sizing: border-box;
+}
+
+body{
+    padding : 50px;
+}
+
+header{
+    width : 100%;
+    display : grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 60px);
+    gap : 1px;
+    margin-bottom : 100px;
+    font-family: "DM Serif Display", monospace;
+    border : 1px solid black;
+    background : black;
+    .logo{
+        grid-column : 2/span 2;
+        font-size : 30px;
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        background : white;
+    }
+    .menu{
+        font-size : 16px;
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+}
+
+.title{
+    text-align: center;
+    margin-bottom : 50px;
+    h1{
+        font-family: "DM Serif Display", monospace;
+        font-size : 60px;
+        margin-bottom : 25px;
+    }
+    h4{
+        font-size : 14px;
+        word-spacing: 5px;
+    }
+}
+
+.hero{
+    width : 100%;
+    height : 80vh;
+    display : grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom : 200px;
+    img{
+        width : 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+main{
+    width : 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 80vh 50px;
+    background-color: black;
+    gap : 1px;
+    .subTitle{
+        background-color: white;
+        grid-column: 1 / -1;
+        font-family: "DM Serif Display", monospace;
+        font-size : 40px;
+        text-align: center;
+    }
+    article{
+        background-color: white;
+        padding : 10%;
+        height : 100%;
+        div{
+            width : 100%;
+            height : 80%;
+            background-color: black;
+            margin-bottom : 20px;
+        }
+        h2{
+            font-family: "DM Serif Display", monospace;
+            font-size : 16px;
+            margin-bottom: 10px;
+        }
+        &:first-child{
+            border-left : 1px solid black;
+        }
+        &:last-child{
+            border-right : 1px solid black;
+        }
+    }
+    article:first-child
+    .footer{
+        grid-column : span 2;
+        background-color: white;;
+        border-bottom : 1px solid black;
+        &:first-child{
+            border-left : 1px solid black;
+        }
+        &:last-child{
+            border-right : 1px solid black;
+        }
+    }
+}
